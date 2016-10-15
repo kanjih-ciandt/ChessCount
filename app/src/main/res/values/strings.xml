@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">ChessCount</string>
+    <string name="app_name">Chess Score</string>
+    <string name="King">King</string>
+    <string name="Queen">Queen</string>
+    <string name="Rook">Rook</string>
+    <string name="Bishop">Bishop</string>
+    <string name="Knight">Knight</string>
+    <string name="Pawn">Pawn</string>
+    <string name="PlayerWhite">Player White</string>
+    <string name="PlayerBlack">Player Black</string>
+
+
 </resources>
