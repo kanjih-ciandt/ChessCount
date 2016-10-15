@@ -67,31 +67,31 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void scoreGetPawnByBlack(View view){
-        scorePlayerWhite++;
+        scorePlayerBlack++;
         this.displayScorePlayerBlack();
 
     }
 
     public void scoreGeBishopByBlack(View view){
-        scorePlayerWhite = scorePlayerWhite + 3.0;
+        scorePlayerBlack = scorePlayerBlack + 3.0;
         this.displayScorePlayerBlack();
 
     }
 
     public void scoreGetKnightByBlack(View view){
-        scorePlayerWhite = scorePlayerWhite + 3.5;
+        scorePlayerBlack = scorePlayerBlack + 3.5;
         this.displayScorePlayerBlack();
 
     }
 
     public void scoreGetRookByBlack(View view){
-        scorePlayerWhite = scorePlayerWhite + 5;
+        scorePlayerBlack = scorePlayerBlack + 5;
         this.displayScorePlayerBlack();
 
     }
 
     public void scoreGetQueenByBlack(View view){
-        scorePlayerWhite = scorePlayerWhite + 10;
+        scorePlayerBlack = scorePlayerBlack + 10;
         this.displayScorePlayerBlack();
 
     }
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayScorePlayerBlack(){
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
-        scoreView.setText(String.valueOf(scorePlayerWhite));
+        scoreView.setText(String.valueOf(scorePlayerBlack));
 
     }
 
