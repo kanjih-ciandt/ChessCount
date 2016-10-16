@@ -93,24 +93,20 @@ public class MainActivity extends AppCompatActivity {
     public void scoreGetQueenByBlack(View view){
         scorePlayerBlack = scorePlayerBlack + 10;
         this.displayScorePlayerBlack();
-
     }
 
     public void scoreGetKingByBlack(View view){
         this.displayWinByBlack();
-
     }
 
     public void displayScorePlayerBlack(){
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(scorePlayerBlack));
-
     }
 
     public void displayWinByBlack(){
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText("Winner by Player Black !!!");
-
     }
 
 
@@ -119,8 +115,6 @@ public class MainActivity extends AppCompatActivity {
         ((TextView) findViewById(R.id.team_b_score)).setText("0.0");
         scorePlayerWhite = 0;
         scorePlayerBlack= 0;
-
-
     }
 
 
