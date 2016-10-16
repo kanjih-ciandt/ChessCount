@@ -16,6 +16,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putDouble("scorePlayerWhite",  scorePlayerWhite);
+        savedInstanceState.putDouble("scorePlayerBlack", scorePlayerBlack);
+
+    }
+
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        scorePlayerWhite = savedInstanceState.getDouble("scorePlayerWhite");
+        scorePlayerBlack = savedInstanceState.getDouble("scorePlayerBlack");
+        this.displayScorePlayerWhite();
+        this.displayScorePlayerBlack();
+
     }
 
     public void scoreGetPawnByWhite(View view){
